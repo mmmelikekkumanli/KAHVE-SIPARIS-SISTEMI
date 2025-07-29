@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kahve Sipariş Formu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kahve Siparişi Ver</h1>
+
+    <form id="orderForm">
+      <label>İsim:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>Kahve Türü:
+        <select name="type">
+          <option value="Türk Kahvesi">Türk Kahvesi</option>
+          <option value="Latte">Latte</option>
+          <option value="Espresso">Espresso</option>
+        </select>
+      </label>
+
+      <label>Boyut:</label>
+      <label><input type="radio" name="size" value="Küçük" required /> Küçük</label>
+      <label><input type="radio" name="size" value="Orta" /> Orta</label>
+      <label><input type="radio" name="size" value="Büyük" /> Büyük</label>
+
+      <label>Not:
+        <textarea name="note" placeholder="(Opsiyonel)"></textarea>
+      </label>
+
+      <button type="submit">Gönder</button>
+    </form>
+
+    <hr>
+    <h2>Verilen Siparişler</h2>
+    <ul id="orderList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

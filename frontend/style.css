@@ -1,0 +1,80 @@
+/* Sayfa genel stil */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form kutusu */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Başlık stil + emoji */
+h1 {
+  text-align: center;
+  color: #5c4033;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+
+/* Etiketler */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Giriş alanları */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #B87D4B; /* Macchiato tonu */
+  outline: none;
+}
+
+/* Radyo butonları */
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* Gönder butonu - Latte + Macchiato uyumu */
+button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #B87D4B; /* Macchiato */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #A67B5B; /* Latte */
+  transform: scale(1.03);
+}
